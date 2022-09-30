@@ -6,36 +6,31 @@ body{
     color: whitesmoke;
 }
 
-header nav div{
+header nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 5px;
-
-    list-style-type: none;
     font-weight: bold;
     
 }
 
 #logo{
-    margin-left: 40px;
+    margin-left: 3%;
     float: left;
 }
 
 #navig ul li{
-    margin-left: 40px;
+    margin-left: 2rem;
 }
 
 #navig ul{
     list-style: none;
     display: flex;
-    
+    width:100%;
 }
 
 #navig ul li a:link{
-    
     text-decoration:none;         
-    color: whitesmoke;
 }
 #navig ul li a:hover{
     text-decoration: underline;
@@ -47,26 +42,27 @@ header nav div{
 }
 
 .breadcrumb li{
-    margin-left: 40px;
+    margin-left: 3%;
 }
 
 .breadcrumb a:link{
     text-decoration:none;         
-    color: whitesmoke;
 }
 
 .breadcrumb a:hover{
     text-decoration: underline;
 }
 
+
 section p,section h1{
     text-align: left;
-    width: 500px;
+    width: 50%;
 }
+
 .articleBox{
     text-decoration:none;
-    height: 470px;
-    width: 250px;
+    height: 40rem;
+    width: 20rem;
     border: 2px solid whitesmoke;
 
 }
@@ -76,41 +72,36 @@ section p,section h1{
     text-decoration:none;
 }
 
-.articleBox > *:not(:first-child){
-    margin-left: 20px;
-} 
-
 .image{
     display: flex;
 	justify-content: center;
 	align-items: baseline;
-    padding: 20px;
+    padding: 10%;
 }
-.image img{
-    width:200px ;
-}
+
 .videoName{
     width: auto;
-    padding-left: 20px;
+    padding-left: 7%;
     font-weight: bold;
     font-size: large;
     
 }
 
 .prices{
-    padding-left: 20px;
-    margin-top: 20px;
+    padding-left: 7%;
+    margin-top: 7%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 .prices>*{
-    padding-bottom: 5px;
+    width: 100%;
+    position: relative;
+    padding-bottom: 2%;
 }
 
 .RRP{
-    margin-top: 10px;
     color: gray;
 }
 
@@ -131,11 +122,13 @@ section p,section h1{
 
 .articles{
     display: flex;
-    justify-content:baseline;
-    gap:50px
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    
 }
 .articleBox:hover{
     transform : scale(1.05);
     cursor: pointer;
     transition: transform 0.7s ease;
 }
+.articleBox{}
