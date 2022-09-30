@@ -1,0 +1,122 @@
+body{
+    box-sizing: border-box;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1e2028;
+    color: whitesmoke;
+}
+
+header nav div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5px;
+
+    list-style-type: none;
+    font-weight: bold;
+    
+}
+
+#logo{
+    margin-left: 40px;
+    float: left;
+}
+
+#navig ul li{
+    margin-left: 40px;
+}
+
+#navig ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+#navig ul li a:link{
+    
+    text-decoration:none;         
+    color: whitesmoke;
+}
+#navig ul li a:hover{
+    text-decoration: underline;
+}
+section p,section h1{
+    text-align: left;
+    width: 500px;
+}
+.articleBox{
+    text-decoration:none;
+    height: 460px;
+    width: 250px;
+    border: 2px solid whitesmoke;
+
+}
+
+.articleBox a:link,a:visited{
+    color: whitesmoke;
+    text-decoration:none;
+}
+
+.articleBox > *:not(:first-child){
+    margin-left: 20px;
+} 
+
+.image{
+    display: flex;
+	justify-content: center;
+	align-items: baseline;
+    padding: 20px;
+}
+.image img{
+    width:200px ;
+}
+.videoName{
+    width: auto;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: large;
+    
+}
+
+.prices{
+    padding-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.prices>*{
+    padding-bottom: 5px;
+}
+
+.RRP{
+    margin-top: 10px;
+    color: gray;
+}
+
+.price{
+    font-weight: bold;
+}
+.price span{
+    text-decoration: underline;
+}
+
+.saving {
+    color:rgb(0, 158, 79);
+}
+
+.articleBox p{
+    margin:0;
+}
+
+.articles{
+    display: flex;
+    justify-content:baseline;
+    gap:50px
+}
+.articleBox:hover{
+    transform : scale(1.05);
+    cursor: pointer;
+    transition: transform 0.7s ease;
+}
