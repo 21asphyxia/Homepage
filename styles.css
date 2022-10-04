@@ -191,3 +191,6 @@ section{
         display: none;
     }
 }
+
+
+* {cursor:url(cursor.cur), auto !important;}
