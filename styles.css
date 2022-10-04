@@ -1,32 +1,47 @@
-body{
+* {
     box-sizing: border-box;
-    width: 100%;
+}
+body{
+    max-width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #1e2028;
     color: whitesmoke;
+    min-width: 400px;
 }
 
 header nav {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     font-weight: bold;
+}
+
+
+#navig ul li{
+    background-color: rgb(2,0,36);
+    background-color: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(17,17,46,1) 60%, rgba(5,3,66,1) 100%);
+    padding:0.7rem;
+    border-radius: 2rem ;
     
 }
 
 #logo{
-    margin-left: 3%;
-    float: left;
-}
-
-#navig ul li{
-    margin-left: 2rem;
+    margin: 3rem;
 }
 
 #navig ul{
+    text-align: center;
     list-style: none;
     display: flex;
-    width:100%;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#navig ul li a{
+    font-size: 0.8rem;
 }
 
 #navig ul li a:link{
@@ -45,6 +60,10 @@ header nav {
     margin-left: 3%;
 }
 
+.breadcrumb li a{
+    color: rgb(132, 132, 132);
+}
+
 .breadcrumb a:link{
     text-decoration:none;         
 }
@@ -54,16 +73,18 @@ header nav {
 }
 
 
-section p,section h1{
-    text-align: left;
-    width: 50%;
+.category , .desc{
+    padding-left: 2rem;
+    text-align:justify;
+    width: 70%;
+    
+    
 }
 
 .articleBox{
-    text-decoration:none;
-    height: 40rem;
-    width: 20rem;
+    width: 15rem;
     border: 2px solid whitesmoke;
+    margin-bottom: 2rem;
 
 }
 
@@ -73,10 +94,9 @@ section p,section h1{
 }
 
 .image{
-    display: flex;
-	justify-content: center;
-	align-items: baseline;
-    padding: 10%;
+    top:0;
+	size: 30rem;
+    padding-bottom: 1rem;
 }
 
 .videoName{
@@ -130,4 +150,43 @@ section p,section h1{
     transform : scale(1.05);
     cursor: pointer;
     transition: transform 0.7s ease;
+}
+
+section{
+    width: 100%;
+}
+
+@media screen and (max-width:720px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    #logo {
+        display: block;
+        margin: 0;
+        margin-top: 1rem;
+    }
+    #navig {
+        padding-top: 2rem;
+        
+       
+    }
+    #navig ul{
+        padding: 0rem;
+        flex-wrap: nowrap;
+    }
+
+    #navig a{
+        font-size: 0.7rem;
+    }
+}
+
+@media print {
+    #logo{
+        margin:auto;
+    }
+
+    #navig{
+        display: none;
+    }
 }
