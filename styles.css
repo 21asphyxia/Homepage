@@ -71,7 +71,7 @@ header nav {
 
 
 .category , .desc{
-    padding-left: 0.6rem;
+    padding-left: 2rem;
     text-align:justify;
     width: 70%;
     
@@ -136,14 +136,13 @@ header nav {
 
 .articles{
     display: flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
     flex-wrap: wrap;
     
 }
 .articleBox:hover{
     transform : scale(1.05);
-    cursor: pointer;
-    transition: transform 0.7s ease;
+    transition: transform 0.7s;
 }
 
 @media screen and (max-width:720px) {
